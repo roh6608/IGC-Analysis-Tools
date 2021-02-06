@@ -33,7 +33,7 @@ if(!require("hms")){
 Using IGCparser
 -----------------
 The functions contained within the IGCparser package are;
-- ```r IGCparse()```
+- ```IGCparse()```, which parses the IGC file into a simple format for analysis.
 
 
  
