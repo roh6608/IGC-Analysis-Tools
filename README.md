@@ -9,7 +9,7 @@ To install the version under development;
 
 ```r
 if (!require("devtools")) {
-  install.packages("devtools", repos = "http://cran.rstudio.com/")
+  install.packages("devtools")
   library("devtools")
 }
 
