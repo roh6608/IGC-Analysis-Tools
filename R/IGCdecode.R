@@ -1,12 +1,12 @@
 #' Decode IGC file
 #' This function decodes an IGC file
-#' @param filepath
+#' @param filepath filepath of IGC file contained within ""
 #'
 #' @return data frame
 #' @export
 #'
 #' @examples
-#'
+#' IGCdecode("2021-02-05-XCS-AAA-03.igc)
 #'
 #'
 IGCdecode <- function(filepath){
