@@ -39,7 +39,7 @@ Using IGCparser
 -----------------
 The functions contained within the IGCparser package are;
 - ```IGCparse()```, which parses the IGC file into a simple format for analysis.
-- ```barogram()```, which creates a ggplot2 object displaying the barogram for the flight.
+- ```barogram()```, which creates a ggplot2 object, displaying the barogram for the flight.
 
 
 Licence
