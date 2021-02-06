@@ -16,7 +16,22 @@ if (!require("devtools")) {
 install_github("roh6608/IGCparser", build_vignettes = TRUE)
 
 ```
+Also ensure both dplyr and hms are installed;
 
+```r
+if(!require("dplyr")){
+  install.packages("dplyr")
+  library("dplyr")
+}
+
+if(!require("hms")){
+  install.packages("hms")
+  library("hms")
+}
+
+```
+Using IGCparser
+-----------------
 
 
 
