@@ -44,6 +44,4 @@ The functions contained within the IGCparser package are;
 
 Licence
 ----------------
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-Refer to the above link or the LICENCE file for more information.
+This library is licenced under the GNU Lesser General Public License v2.1, for more information read the LICENCE file.
