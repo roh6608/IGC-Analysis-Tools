@@ -16,7 +16,7 @@ if (!require("devtools")) {
 install_github("roh6608/IGCparser", build_vignettes = TRUE)
 
 ```
-Also ensure both dplyr and hms are installed;
+Also ensure dplyr, hms and ggplot2 are installed;
 
 ```r
 if(!require("dplyr")){
@@ -27,6 +27,11 @@ if(!require("dplyr")){
 if(!require("hms")){
   install.packages("hms")
   library("hms")
+}
+
+if(!require("ggplot2")){
+  install.packages("ggplot2")
+  library("ggplot2")
 }
 
 ```
