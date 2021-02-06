@@ -1,11 +1,13 @@
 Package: IGCdecoder
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Decode IGC files
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Rohan St Hill
+Maintainer: Rohan St Hill <rohan.sthill@uon.edu.au>
+Description: The package can decode IGC files into; time, latitude, longitude and altitude, it also provides
+    graphics to visualise the flight.
+License: CC-BY-NC-SA 4.0
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr
