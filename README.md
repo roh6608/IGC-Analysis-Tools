@@ -13,7 +13,7 @@ if (!require("devtools")) {
   library("devtools")
 }
 
-install_github("roh6608/IGCparser/", build_vignettes = TRUE)
+install_github("roh6608/IGCparser", build_vignettes = TRUE)
 
 ```
 
