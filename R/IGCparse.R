@@ -1,15 +1,15 @@
-#' Decode IGC file
+#' Parse IGC file
 #'
-#' @param filepath filepath of IGC file contained within ""
+#' @param filepath filepath of IGC file contained within " "
 #'
 #' @return A data frame, with time in seconds, latitude and longitude in decimal degrees, pressure
 #' and GNSS altitude in meters, climb rate in m/s
 #' @export
 #'
-#' @examples IGCdecode("2021-02-05-XCS-AAA-03.igc")
+#' @examples IGCparse("2021-02-05-XCS-AAA-03.igc")
 #'
 #'
-IGCdecode <- function(filepath){
+IGCparse <- function(filepath){
   `%>%` <- dplyr::`%>%`
   #data import
   df <- read.csv(paste0(filepath), header = F)

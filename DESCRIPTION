@@ -1,11 +1,11 @@
-Package: IGCdecoder
+Package: IGCparser
 Type: Package
-Title: Decode IGC files
+Title: Parse IGC files
 Version: 0.1.0
 Author: Rohan St Hill
 Maintainer: Rohan St Hill <rohan.sthill@uon.edu.au>
-Description: The package can decode IGC files into; time, latitude, longitude and altitude, it also provides
-    graphics to visualise the flight.
+Description: The package can parse IGC files into; time, latitude, longitude and altitude, it also provides
+    graphics to visualise the flight and calculations to find other information from the flight.
 License: CC-BY-NC-SA 4.0
 Encoding: UTF-8
 LazyData: true
