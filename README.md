@@ -1,7 +1,7 @@
 IGCparser
 ===================
 
-Provides functions that enable an IGC file to be parsed, creating a data.frame containing time (s), pressure and GNSS altitude (m), latitude and longitude (DDD.DDDDD°) and climb rate (m/s).
+Provides functions that enable an IGC file to be parsed, creating a data.frame containing time (s), pressure and GNSS altitude (m), latitude and longitude (DDD.DDDDD°) and climb rate (m/s). Also provides functions for the analysis of the flight recorded within the IGC file.
 
 Getting started
 ------------------
