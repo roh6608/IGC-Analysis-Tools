@@ -1,11 +1,10 @@
-Package: IGCparser
+Package: IGCAnalysisTools
 Type: Package
-Title: Parse IGC files
-Version: 0.1.0
+Title: IGC-Analysis-Tools
+Version: 0.1.5
 Author: Rohan St Hill
 Maintainer: Rohan St Hill <rohan.sthill@uon.edu.au>
-Description: The package can parse IGC files into; time, latitude, longitude and altitude, it also provides
-    graphics to visualise the flight and calculations to find other information from the flight.
+Description: This package provides functions to both parse and analyse IGC files.
 License: LGPL-2.1
 Encoding: UTF-8
 LazyData: true

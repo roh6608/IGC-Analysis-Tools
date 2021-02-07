@@ -31,7 +31,11 @@ time_in_lift <- function(data,launch_type,launch_height){
 
   if(launch_type == "self"){
     data <- data[(data$climb_rate_press > 0),]
-    return(sum(data$time_diff))
+    return(sum(data$time_diff)/3600)
+  }
+
+  else{
+    errorCondition("Under development")
   }
 
 }
