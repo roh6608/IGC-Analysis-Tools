@@ -41,6 +41,7 @@ The functions contained within the IGCparser package are;
 - ```IGCparse()```, which parses the IGC file into a simple format for analysis.
 - ```barogram()```, which creates a ggplot2 object, displaying the barogram for the flight.
 - ```climb_plot()```, which creates a ggplot2 object, displaying the climb rate for the flight.
+- ```time_in_lift()```, which gives a numerical output of time in lift in decimal hours.
 
 
 Licence
