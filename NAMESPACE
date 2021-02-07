@@ -3,3 +3,4 @@
 export(IGCparse)
 export(barogram)
 export(climb_plot)
+export(time_in_lift)
