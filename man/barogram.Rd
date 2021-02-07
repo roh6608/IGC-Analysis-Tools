@@ -9,7 +9,7 @@ barogram(data, alt_unit)
 \arguments{
 \item{data}{data frame from the output of the IGCparse() function}
 
-\item{units}{string of either "feet" or "metre" to indicate what units the altitude values should be}
+\item{alt_unit}{string of either "feet" or "metre" to indicate what units the altitude values should be}
 }
 \value{
 ggplot2 object

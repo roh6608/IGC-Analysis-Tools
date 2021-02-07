@@ -1,7 +1,7 @@
 #' Barogram Plot
 #'
 #' @param data data frame from the output of the IGCparse() function
-#' @param units string of either "feet" or "metre" to indicate what units the altitude values should be
+#' @param alt_unit string of either "feet" or "metre" to indicate what units the altitude values should be
 #'
 #' @return ggplot2 object
 #' @export
@@ -20,7 +20,7 @@ barogram <- function(data,alt_unit){
     ggplot2::ggplot(data = data) +
       geom_line(mapping = aes(x = time/60, y = press_alt*3.281, colour = "Pressure Altitude")) +
       geom_line(mapping = aes(x = time/60, y = GNSS_alt*3.281, colour = "GNSS Altitude")) +
-      labs(title = "Barogram", x = "Time (min)", y = "Altitude (ft)", colour = "Legened")
+      labs(title = "Barogram", x = "Time (min)", y = "Altitude (ft)", colour = "Legend")
 
   }
 }
