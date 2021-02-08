@@ -10,8 +10,7 @@ IGCparse(filepath)
 \item{filepath}{filepath of IGC file contained within " "}
 }
 \value{
-A data frame, with time in seconds, latitude and longitude in decimal degrees, pressure
-and GNSS altitude in meters, climb rate in m/s
+A data frame all units are SI units of the power 10^0
 }
 \description{
 Parse IGC file

@@ -2,8 +2,7 @@
 #'
 #' @param filepath filepath of IGC file contained within " "
 #'
-#' @return A data frame, with time in seconds, latitude and longitude in decimal degrees, pressure
-#' and GNSS altitude in meters, climb rate in m/s
+#' @return A data frame all units are SI units of the power 10^0
 #' @export
 #'
 #' @examples IGCparse("2021-02-05-XCS-AAA-03.igc")
@@ -15,7 +14,7 @@ IGCparse <- function(filepath){
   df <- read.csv(paste0(filepath), header = F)
 
   #manipulating data
-  data <- as.data.frame(df[grep("B", df$V1),])
+  data <- as.data.frame(df[grep("B", substr(df$V1,1,1)),])
   colnames(data) <- c("V1")
   data$time <- as.numeric(hms::hms(seconds = as.numeric(substr(data$V1,6,7)),
                         minutes = as.numeric(substr(data$V1,4,5)),
