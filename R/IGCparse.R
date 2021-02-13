@@ -50,19 +50,20 @@ IGCparse <- function(filepath){
   data$climb_rate_press <- c(diff(data$press_alt)/diff(data$time),0)
   data$climb_rate_GNSS <- c(diff(data$GNSS_alt)/diff(data$time),0)
 
-  distance <- function(lat1,lon1,lat2,lon2){
+  distance <- function(lat1,lon1,alt1,lat2,lon2,alt2){
+    alt <- c(alt1,alt2)
     lat1 <- lat1*pi/180
     lat2 <- lat2*pi/180
     lon1 <- lon1*pi/180
     lon2 <- lon2*pi/180
-    distance <- 2*6.3781*10^6*sqrt((sin((lat2-lat1)/2)^2)+cos(lat1)*cos(lat2)*sin((lon2-lon1)/2)^2)
+    distance <- 2*(6.3781*10^6+mean(alt))*sqrt((sin((lat2-lat1)/2)^2)+cos(lat1)*cos(lat2)*sin((lon2-lon1)/2)^2)
 
     return(distance)
   }
 
   dislis <- list()
   for(i in 1:nrow(data)){
-    dislis[[i]] <- distance(data$lat[i],data$lon[i],data$lat[(i+1)],data$lon[(i+1)])
+    dislis[[i]] <- distance(data$lat[i],data$lon[i],data$GNSS_alt[i],data$lat[(i+1)],data$lon[(i+1)],data$GNSS_alt[(i+1)])
   }
 
   data$dist <- unlist(dislis)
@@ -77,3 +78,5 @@ IGCparse <- function(filepath){
 
   return(data)
 }
+
+
